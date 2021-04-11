@@ -446,7 +446,10 @@ body{
 .wrapper{
     max-width: 1219px;
    margin: 0 auto;
-   padding: 0 55px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 55px;
+   padding-right: 55px;
 }
 
 /* header styles start*/
@@ -467,6 +470,7 @@ header{
     align-items: flex-end;
     justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 16px;
 }
 .header__list{
     display: flex;
@@ -492,7 +496,7 @@ header{
 /* header styles end*/
 /* intro styles start*/
 .intro{
-    height: 403px;
+height: 403px;
     background: url(../img/introBG.jpg) 100% 100% no-repeat;
     background-size: cover;
     
@@ -507,6 +511,9 @@ header{
 }
 /* intro styles end*/
 /* problem styles start*/
+.problem{
+    background: #EEEEEE;
+}
 .problem__title{
     font-weight: 500;
     font-size: 64px;
@@ -520,7 +527,8 @@ header{
     font-size: 32px;
     line-height: 37px;
     color: #000000;
-    margin-bottom: 85px;
+    padding-bottom: 85px;
+   
 }
 .problem__text-strong{
     font-weight: bold;
@@ -603,7 +611,7 @@ header{
     
 }
 .team{
-    height: 845px;
+    max-height: 845px;
     background: #EEEEEE;
 }
 .team_hero {
@@ -611,6 +619,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    padding-bottom: 84px;
 }
 .team__Richard,
 .team__Dinesh,
@@ -618,16 +627,17 @@ header{
 .team__Jared,
 .team__Monica,
 .team__Nelson{
-    width: 350px;
-    height: 283px;
+    max-width: 350px;
+    max-height: 283px;
     text-align: center;
 }
 
 /* team styles end*/
 /* footer styles start*/
 .footer{
-    height: 176px;
-    background: #333333;    
+    max-height: 176px;
+    background: #333333;  
+    padding-bottom: 62px;  
 }
 .footer__div{
     width: 540px;
